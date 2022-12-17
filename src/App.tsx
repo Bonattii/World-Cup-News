@@ -4,7 +4,7 @@ function App() {
   return (
     <div className="bg-background h-screen w-full">
       <Navbar />
-      <h1>Hello World!</h1>
+      
     </div>
   );
 }
