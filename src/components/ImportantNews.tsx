@@ -2,6 +2,7 @@ interface ImportantNewsProps {
   bannerUrl: string;
   title: string;
   description: string;
+  altDesc: string;
 }
 
 export default function importantNews(props: ImportantNewsProps) {
@@ -13,15 +14,15 @@ export default function importantNews(props: ImportantNewsProps) {
       >
         <img
           src={props.bannerUrl}
-          alt="Messi with a big smile after going to the World Cup Final"
-          className="w-6/12 rounded-xl shadow-primary_alpha shadow-xl"
+          alt={props.altDesc}
+          className="rounded-xl shadow-primary_alpha shadow-xl max-w-8xl"
         />
       </a>
 
-      <h1 className="absolute top-10 left-8 text-3xl text-background font-semibold">
+      <h1 className="absolute top-10 left-8 text-5xl text-background font-semibold">
         {props.title}
       </h1>
-      <p className="absolute bottom-10 max-w-md left-8 text-background text-md font-semibold">
+      <p className="absolute bottom-10 max-w-3xl left-8 text-background text-3xl font-semibold">
         {props.description}
       </p>
     </div>

@@ -47,7 +47,7 @@ export default function Navbar() {
           <ul className="flex flex-col p-4 mt-4 border border-primary10 rounded-lg bg-background md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-background">
             <li>
               <a
-                href="#"
+                href="/"
                 className="block py-2 pl-3 pr-4 text-primary hover:text-primary30 rounded md:bg-transparent md:text-primary md:p-0"
                 aria-current="page"
               >
@@ -56,7 +56,7 @@ export default function Navbar() {
             </li>
             <li>
               <a
-                href="#"
+                href="/"
                 className="block py-2 pl-3 pr-4 text-primary hover:text-primary30 rounded md:bg-transparent md:text-primary md:p-0"
               >
                 Team
@@ -64,7 +64,7 @@ export default function Navbar() {
             </li>
             <li>
               <a
-                href="#"
+                href="/"
                 className="block py-2 pl-3 pr-4 text-primary hover:text-primary30 rounded md:bg-transparent md:text-primary md:p-0"
               >
                 Contact
