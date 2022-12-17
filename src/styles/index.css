@@ -7,14 +7,3 @@
   padding: 0;
   box-sizing: border-box;
 }
-
-:root {
-  --c-primary: #8a1538;
-  --c-primary10: #b61c4a;
-  --c-primary30: #e5537f;
-  --c-primary50: #f2acc1;
-  --c-primary_alpha30: rgba(138, 21, 56, 0.3);
-  --c-secondary: #ff004c;
-  --c-accent: #00cfb7;
-  --c-background: #eeeee4;
-}
