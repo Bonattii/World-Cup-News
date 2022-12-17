@@ -5,7 +5,10 @@ export default function Navbar() {
     <nav className="bg-background border-b-2 border-primary10 px-2 sm:px-4 py-2.5 rounded">
       <div className="container flex flex-wrap items-center justify-between mx-auto">
         <a href="/" className="flex items-center">
-          <img src={logo} className="h-14 mr-3 sm:h-9" alt="World Cup News" />
+          <img src={logo} className="h-14 mr-3 " alt="World Cup News" />
+          <span className="text-primary text-md self-center font-semibold whitespace-nowrap">
+            World Cup News
+          </span>
         </a>
         <div className="flex md:order-2">
           <button
@@ -38,7 +41,7 @@ export default function Navbar() {
           </button>
         </div>
         <div
-          className="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
+          className="items-center justify-between hidden w-full"
           id="navbar-cta"
         >
           <ul className="flex flex-col p-4 mt-4 border border-primary10 rounded-lg bg-background md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-background">
