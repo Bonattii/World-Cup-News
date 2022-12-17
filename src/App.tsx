@@ -2,7 +2,7 @@ import Navbar from './components/Navbar';
 
 function App() {
   return (
-    <div>
+    <div className="bg-background h-screen w-full">
       <Navbar />
       <h1>Hello World!</h1>
     </div>
