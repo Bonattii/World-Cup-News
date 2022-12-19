@@ -7,7 +7,7 @@ function App() {
       <Navbar />
       <header>
         <div className="container mx-auto flex justify-center">
-          <h1 className="text-5xl mt-8 mb-2 text-primary font-bold">
+          <h1 className="text-5xl mt-8 mb-0 text-primary font-bold">
             Stay on top of all the world cup news!
           </h1>
         </div>

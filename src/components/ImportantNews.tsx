@@ -3,24 +3,21 @@ interface ImportantNewsProps {
   title: string;
   description: string;
   altDesc: string;
+  newsLink: string;
 }
 
 export default function importantNews(props: ImportantNewsProps) {
   return (
-    <div className=" mx-auto mt-2 relative hover:scale-105 duration-1000 py-8">
-      <a
-        href="https://www.marca.com/en/world-cup/2022/03/26/623e73d046163f4b128b4594.html"
-        target="_blank"
-        className="flex justify-center"
-      >
+    <div className=" mx-auto mt-0 relative hover:scale-105 duration-1000 py-8">
+      <a href={props.newsLink} target="_blank" className="flex justify-center">
         <img
           src={props.bannerUrl}
           alt={props.altDesc}
-          className="rounded-xl mb-10 m-2-5xl shadow-[10px_10px_5px] shadow-primary"
+          className="rounded-xl mb-10 w-[64rem] h-[36rem] shadow-[10px_10px_5px] shadow-primary opacity-90"
         />
       </a>
 
-      <h1 className="absolute top-16 left-12 text-4xl text-background font-semibold">
+      <h1 className="absolute top-16 left-12 text-4xl text-background font-semibold mr-1">
         {props.title}
       </h1>
       <p className="absolute bottom-24 max-w-lg left-12 text-background text-2xl font-semibold">

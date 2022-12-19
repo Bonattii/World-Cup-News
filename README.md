@@ -45,4 +45,12 @@ You can learn more in the [Create React App documentation](https://facebook.gith
 
 To learn React, check out the [React documentation](https://reactjs.org/).
 
-Messi photo took on https://www.marca.com/en/world-cup/2022/03/26/623e73d046163f4b128b4594.html
+Messi https://www.marca.com/en/world-cup/2022/03/26/623e73d046163f4b128b4594.html
+
+Neymar https://www.espn.com/soccer/fifa-world-cup/story/4831335/ronaldo-says-neymar-should-have-psychological-support-after-world-cup-pressure-cooker Marvin Ibo Guengoer - GES Sportfoto/Getty Images
+
+Mbappe https://www.aljazeera.com/sports/2022/12/18/france-fans-hail-mbappes-dazzling-world-cup-final-performance [Showkat Shafi/Al Jazeera]
+
+Modric https://www.mirror.co.uk/sport/football/match-reports/luka-modric-world-cup-croatia-28757741
+
+Hakimi https://www.mirror.co.uk/sport/football/news/hakimi-infantino-fifa-morocco-croatia-28759754 Ercin Erturk/Anadolu Agency via Getty Images)
