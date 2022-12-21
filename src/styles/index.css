@@ -1,3 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#divider {
+  position: relative;
+  top: -0px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 200px 100vw 0 0;
+  border-color: transparent #8a1538 transparent transparent;
+}

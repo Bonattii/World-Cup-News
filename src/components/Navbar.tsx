@@ -2,7 +2,7 @@ import logo from '../assets/logo.svg';
 
 export default function Navbar() {
   return (
-    <nav className="bg-background border-b-2 border-primary10 px-2 sm:px-4 py-2.5 rounded">
+    <nav className="bg-background border-b-4 border-primary10 px-2 sm:px-4 py-2.5 rounded">
       <div className="container flex flex-wrap items-center justify-between mx-auto">
         <a href="/" className="flex items-center">
           <img src={logo} className="h-14 mr-3 " alt="World Cup News" />
@@ -40,7 +40,7 @@ export default function Navbar() {
             </svg>
           </button>
         </div>
-        
+
       </div>
     </nav>
   );
