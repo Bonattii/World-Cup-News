@@ -11,6 +11,20 @@ module.exports = {
       secondary: '#ff004c',
       accent: '#00cfb7',
       background: '#eeeee4'
+    },
+    extend: {
+      width: {
+        64: '64rem',
+        32: '32rem'
+      },
+      height: {
+        44: '44rem',
+        32: '32rem',
+        18: '18rem'
+      },
+      transitionDuration: {
+        2000: '2000ms'
+      }
     }
   },
   plugins: []

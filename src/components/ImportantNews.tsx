@@ -8,19 +8,19 @@ interface ImportantNewsProps {
 
 export default function importantNews(props: ImportantNewsProps) {
   return (
-    <div className=" mx-auto mt-0 relative hover:scale-105 duration-1000 py-8">
-      <a href={props.newsLink} target="_blank" className="flex justify-center">
+    <div className="relative mx-auto mt-0 hover:scale-95 duration-2000 py-8 min-w-20 max-w-64 h-32 lg:h-32 2xl:h-44 w-full">
+      <a href={props.newsLink} target="_blank">
         <img
           src={props.bannerUrl}
           alt={props.altDesc}
-          className="rounded-xl mb-10 w-[64rem] h-[36rem] shadow-[10px_10px_5px] shadow-primary opacity-90"
+          className="rounded-xl mb-10 shadow-[10px_10px_5px] shadow-primary w-full h-full"
         />
       </a>
 
-      <h1 className="absolute top-16 left-12 text-4xl text-background font-semibold mr-1">
+      <h1 className="absolute top-16 left-16 text-4xl text-background font-semibold mr-1 max-w-4xl md:max-w3xl">
         {props.title}
       </h1>
-      <p className="absolute bottom-24 max-w-lg left-12 text-background text-2xl font-semibold">
+      <p className="absolute bottom-16 max-w-xl left-16 text-background text-2xl font-semibold md:max-w-lg 2xl:max-w-3xl">
         {props.description}
       </p>
     </div>

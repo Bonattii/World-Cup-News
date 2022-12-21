@@ -1,25 +1,68 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay, Navigation } from 'swiper';
+import SwiperCore, { Autoplay, EffectCoverflow } from 'swiper';
 
 import 'swiper/css';
-import 'swiper/css/effect-fade';
 import 'swiper/css/autoplay';
+import 'swiper/swiper-bundle.min.css';
+import 'swiper/swiper.min.css';
 
 import ImportantNews from './ImportantNews';
+
+SwiperCore.use([EffectCoverflow]);
 
 export default function Carousel() {
   return (
     <Swiper
-      navigation={true}
-      modules={[Navigation, Autoplay]}
-      effect="fade"
+      effect={'coverflow'}
+      grabCursor={true}
+      centeredSlides={true}
+      slidesPerView={1.2}
+      coverflowEffect={{
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows: false
+      }}
+      modules={[Autoplay]}
       className="mySwiper"
       autoplay={{ disableOnInteraction: false, delay: 7000 }}
-      slidesPerView={1.5}
-      centeredSlides={true}
-      spaceBetween={100}
+      loop={true}
+      spaceBetween={0}
+      breakpoints={{
+        640: {
+          spaceBetween: 100
+        },
+        768: {
+          spaceBetween: 80
+        },
+        1024: {
+          spaceBetween: 60
+        },
+        1200: {
+          spaceBetween: 100
+        },
+        1400: {
+          spaceBetween: 150
+        },
+        1600: {
+          spaceBetween: 190
+        },
+        1800: {
+          spaceBetween: 230
+        },
+        2000: {
+          spaceBetween: 280
+        },
+        2200: {
+          spaceBetween: 350
+        },
+        2400: {
+          spaceBetween: 420
+        }
+      }}
     >
-      <SwiperSlide className="w-[60rem]">
+      <SwiperSlide>
         <ImportantNews
           bannerUrl="https://e00-marca.uecdn.es/assets/multimedia/imagenes/2022/03/26/16482599142258.jpg"
           title="Messi hints at retirement after World Cup on his final game in Argentina"
@@ -28,34 +71,34 @@ export default function Carousel() {
           newsLink="https://www.marca.com/en/world-cup/2022/03/26/623e73d046163f4b128b4594.html"
         />
       </SwiperSlide>
-      <SwiperSlide className="w-[60rem]">
+      <SwiperSlide>
         <ImportantNews
-          bannerUrl="https://a2.espncdn.com/combiner/i?img=%2Fphoto%2F2022%2F1213%2Fr1106029_1296x729_16%2D9.jpg&w=1140&cquality=40&format=jpg"
+          bannerUrl="https://images.seattletimes.com/wp-content/uploads/2022/12/urnpublicidap.orgd78ded409153fd46442d3efed954a3a6APTOPIX_WCup_Croatia_Brazil_Soccer_47685.jpg?d=780x520"
           title="Ronaldo says Neymar should have psychological support after World Cup pressure cooker"
           description="Brazil great Ronaldo believes Neymar and other Brazilian players should have psychological help to deal with the disproportionate pressure from the World Cup."
           altDesc="Neymar crying after lose"
           newsLink="https://www.espn.com/soccer/fifa-world-cup/story/4831335/ronaldo-says-neymar-should-have-psychological-support-after-world-cup-pressure-cooker"
         />
       </SwiperSlide>
-      <SwiperSlide className="w-[60rem]">
+      <SwiperSlide>
         <ImportantNews
-          bannerUrl="https://www.aljazeera.com/wp-content/uploads/2022/12/SSS17519_1.jpg?resize=770%2C513&quality=80"
-          title="France fans hail Mbappe’s dazzling World Cup final performance"
+          bannerUrl="https://www.thesun.co.uk/wp-content/uploads/2022/12/crop-20801453.jpg?w=1320"
+          title="France fans hail Mbappe's dazzling World Cup final performance"
           description="Mbappe secured the golden boot with his hat-trick in the final and came close to winning a second World Cup."
-          altDesc="Mbappe celebrating after a goal"
+          altDesc="Mbappe holding his golden boot"
           newsLink="https://www.aljazeera.com/sports/2022/12/18/france-fans-hail-mbappes-dazzling-world-cup-final-performance"
         />
       </SwiperSlide>
-      <SwiperSlide className="w-[60rem]">
+      <SwiperSlide>
         <ImportantNews
           bannerUrl="https://i2-prod.mirror.co.uk/incoming/article28757763.ece/ALTERNATES/s615b/0_GettyImages-1449847576.jpg"
           title="Luka Modric's reaction speaks volumes as Croatia hero"
-          description="Modric himself, even at 37, still covers the ground. Often he looks fatigued, as though he’s not got one more sprint left in him."
+          description="Modric himself, even at 37, still covers the ground. Often he looks fatigued, as though he's not got one more sprint left in him."
           altDesc="Modric running with the ball"
           newsLink="https://www.mirror.co.uk/sport/football/match-reports/luka-modric-world-cup-croatia-28757741"
         />
       </SwiperSlide>
-      <SwiperSlide className="w-[60rem]">
+      <SwiperSlide>
         <ImportantNews
           bannerUrl="https://i2-prod.mirror.co.uk/incoming/article28759930.ece/ALTERNATES/s1200d/0_GettyImages-1245679959.jpg"
           title="Morocco star Achraf Hakimi confronted FIFA president"
