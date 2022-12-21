@@ -2,6 +2,7 @@ import Carousel from './components/Carousel';
 import Navbar from './components/Navbar';
 
 import pinMap from './assets/pinMap.svg';
+import QatarInfoFlag from './components/QatarInfoFlag';
 
 function App() {
   return (
@@ -59,6 +60,25 @@ function App() {
               Be part of the biggest soccer fans group
             </li>
           </ul>
+        </article>
+        <div id="divider-reverse"></div>
+        <article className="bg-background pt-0 px-2 mx-auto pb-20 sm:px-4 text-background">
+          <h3 className="text-primary text-center text-4xl font-semibold">About the Newsletter</h3>
+          <div
+            className="p-4 bg-background md:p-8"
+            id="stats"
+            role="tabpanel"
+            aria-labelledby="stats-tab"
+          >
+            <dl className="grid max-w-screen-xl grid-cols-2 gap-8 p-4 mx-auto text-gray-900 sm:grid-cols-3 xl:grid-cols-6 sm:p-8">
+              <QatarInfoFlag title="+100" description="News"/>
+              <QatarInfoFlag title="10" description="Journalists"/>
+              <QatarInfoFlag title="+1k" description="Subscribers"/>
+              <QatarInfoFlag title="32" description="Teams"/>
+              <QatarInfoFlag title="64" description="Matches"/>
+              <QatarInfoFlag title="24/7" description="Cover"/>
+            </dl>
+          </div>
         </article>
       </main>
     </div>

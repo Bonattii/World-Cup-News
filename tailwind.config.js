@@ -24,6 +24,9 @@ module.exports = {
       },
       transitionDuration: {
         2000: '2000ms'
+      },
+      backgroundImage: {
+        qatar: "url('/src/assets/qatar.svg')"
       }
     }
   },

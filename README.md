@@ -51,8 +51,9 @@ Neymar https://www.espn.com/soccer/fifa-world-cup/story/4831335/ronaldo-says-ney
 
 Mbappe https://www.aljazeera.com/sports/2022/12/18/france-fans-hail-mbappes-dazzling-world-cup-final-performance [Credit: Getty
 
-Modric https://www.mirror.co.uk/sport/football/match-reports/luka-modric-world-cup-croatia-28757741
+Modric https://www.mirror.co.uk/sport/football/match-reports/luka-modric-world-cup-croatia-28757741 https://www.marca.com/en/world-cup/2022/12/06/638f5bd046163f622c8b45d1.html
 
 Hakimi https://www.mirror.co.uk/sport/football/news/hakimi-infantino-fifa-morocco-croatia-28759754 Ercin Erturk/Anadolu Agency via Getty Images)
 
 icon - Handicon
+icon flag - Freepik

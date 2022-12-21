@@ -58,6 +58,7 @@ export default function Carousel() {
           spaceBetween: 350
         },
         2400: {
+          slidesPerView: 1.5,
           spaceBetween: 420
         }
       }}
@@ -91,10 +92,10 @@ export default function Carousel() {
       </SwiperSlide>
       <SwiperSlide>
         <ImportantNews
-          bannerUrl="https://i2-prod.mirror.co.uk/incoming/article28757763.ece/ALTERNATES/s615b/0_GettyImages-1449847576.jpg"
+          bannerUrl="https://e00-marca.uecdn.es/assets/multimedia/imagenes/2022/12/06/16703200321820.jpg"
           title="Luka Modric's reaction speaks volumes as Croatia hero"
           description="Modric himself, even at 37, still covers the ground. Often he looks fatigued, as though he's not got one more sprint left in him."
-          altDesc="Modric running with the ball"
+          altDesc="Modric raising the arm and using the captain's armband"
           newsLink="https://www.mirror.co.uk/sport/football/match-reports/luka-modric-world-cup-croatia-28757741"
         />
       </SwiperSlide>

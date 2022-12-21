@@ -8,8 +8,8 @@ interface ImportantNewsProps {
 
 export default function importantNews(props: ImportantNewsProps) {
   return (
-    <div className="relative mx-auto mt-0 hover:scale-95 duration-2000 py-8 min-w-20 max-w-64 h-32 lg:h-32 2xl:h-44 w-full hover:opacity-[0.90] hover:brightness-50">
-      <a href={props.newsLink} target="_blank">
+    <div className="relative mx-auto mt-0 hover:scale-95 duration-2000 py-8 min-w-20 max-w-6xl h-32 lg:h-32 2xl:h-44 w-full hover:opacity-[0.90] hover:brightness-50 2xl:max-w-[100rem]">
+      <a href={props.newsLink} target="_blank" rel="noreferrer">
         <img
           src={props.bannerUrl}
           alt={props.altDesc}
