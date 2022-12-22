@@ -9,6 +9,7 @@ export default function JoinNewsletter() {
     lastName: '',
     email: ''
   });
+  const [formSubmitted, setFormSubmitted] = useState(false);
 
   function handleChange(e: ChangeEvent<HTMLInputElement>) {
     setToSend({ ...toSend, [e.target.name]: e.target.value });
@@ -32,7 +33,8 @@ export default function JoinNewsletter() {
           console.log('SUCCESS!', response.status, response.text)
         )
         .catch(err => console.log('FAILED!', err));
-      setToSend({ ...toSend, firstName: '', lastName: '', email: '' });
+      setFormSubmitted(true);
+      // setToSend({ ...toSend, firstName: '', lastName: '', email: '' });
     } catch (err) {
       console.log(err);
     }
@@ -56,6 +58,8 @@ export default function JoinNewsletter() {
             type="text"
             onChange={handleChange}
             value={toSend.firstName}
+            pattern="[A-Za-z]{3,16}"
+            title="Name should contain 3-16 characters[a-z]"
           />
         </div>
         <div className="flex flex-col gap-2 w-full">
@@ -70,6 +74,8 @@ export default function JoinNewsletter() {
             type="text"
             onChange={handleChange}
             value={toSend.lastName}
+            pattern="[A-Za-z]{3,16}"
+            title="Name should contain 3-16 characters[a-z]"
           />
         </div>
       </div>
@@ -84,6 +90,7 @@ export default function JoinNewsletter() {
           required
           type="email"
           pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+          title="Email should be like me@me.com"
           onChange={handleChange}
           value={toSend.email}
         />
@@ -93,8 +100,16 @@ export default function JoinNewsletter() {
         <button
           className="w-full rounded-full py-2 bg-background text-primary font-semibold text-lg border border-primary hover:bg-primary hover:text-background hover:border-background duration-200"
           type="submit"
+          style={{
+            color: formSubmitted ? '#00cfb7' : '',
+            borderColor: formSubmitted ? '#00cfb7' : '',
+            backgroundColor: formSubmitted ? '#8a1538' : ''
+          }}
+          disabled={formSubmitted ? true : false}
         >
-          Join Now!
+          {formSubmitted
+            ? `Thanks for joining us ${toSend.firstName} ${toSend.lastName}!`
+            : 'Join Now!'}
         </button>
       </footer>
     </form>
