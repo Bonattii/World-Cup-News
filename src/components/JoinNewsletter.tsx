@@ -1,22 +1,46 @@
-import { FormEvent } from 'react';
+import { ChangeEvent, FormEvent, useState } from 'react';
+import { send } from '@emailjs/browser';
 
 import Input from './Form/Input';
 
 export default function JoinNewsletter() {
-  async function handleJoinNewsletter(event: FormEvent) {
+  const [toSend, setToSend] = useState({
+    firstName: '',
+    lastName: '',
+    email: ''
+  });
+
+  function handleChange(e: ChangeEvent<HTMLInputElement>) {
+    setToSend({ ...toSend, [e.target.name]: e.target.value });
+  }
+
+  async function handleSubmit(event: FormEvent) {
     event.preventDefault();
 
-    const formData = new FormData(event.target as HTMLFormElement);
-    const data = Object.fromEntries(formData);
-
-    if (!data.firstName && !data.lastName && !data.email) {
+    if (!toSend.firstName && !toSend.lastName && !toSend.email) {
       return;
+    }
+
+    try {
+      send(
+        `${process.env.REACT_APP_SERVICE_ID}`,
+        `${process.env.REACT_APP_TEMPLATE_ID}`,
+        toSend,
+        `${process.env.REACT_APP_USER_ID}`
+      )
+        .then(response =>
+          console.log('SUCCESS!', response.status, response.text)
+        )
+        .catch(err => console.log('FAILED!', err));
+      setToSend({ ...toSend, firstName: '', lastName: '', email: '' });
+    } catch (err) {
+      console.log(err);
     }
   }
 
   return (
     <form
-      onSubmit={handleJoinNewsletter}
+      onSubmit={handleSubmit}
       className="mt-8 flex flex-col gap-4 w-[600px]"
     >
       <div className="flex gap-6 w-full">
@@ -30,6 +54,8 @@ export default function JoinNewsletter() {
             placeholder="Your First Name"
             required
             type="text"
+            onChange={handleChange}
+            value={toSend.firstName}
           />
         </div>
         <div className="flex flex-col gap-2 w-full">
@@ -42,6 +68,8 @@ export default function JoinNewsletter() {
             placeholder="Your Last Name"
             required
             type="text"
+            onChange={handleChange}
+            value={toSend.lastName}
           />
         </div>
       </div>
@@ -55,6 +83,9 @@ export default function JoinNewsletter() {
           placeholder="Your Email"
           required
           type="email"
+          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+          onChange={handleChange}
+          value={toSend.email}
         />
       </div>
 
