@@ -13,14 +13,14 @@ export default function importantNews(props: ImportantNewsProps) {
         <img
           src={props.bannerUrl}
           alt={props.altDesc}
-          className="rounded-xl mb-10 shadow-[10px_10px_5px] shadow-primary w-full h-full hover:shadow-accent"
+          className="rounded-xl mb-10 shadow-[10px_10px_5px] shadow-primary w-full h-full hover:shadow-accent object-cover object-right-center "
         />
       </a>
 
-      <h1 className="absolute top-16 left-16 text-4xl text-background font-bold mr-1 max-w-4xl md:max-w3xl uppercase">
+      <h1 className="absolute top-12 left-6 text-md sm:top-16 sm:left-16 sm:text-4xl text-background font-bold mr-1 max-w-4xl md:max-w3xl uppercase">
         {props.title}
       </h1>
-      <p className="absolute bottom-16 max-w-xl left-16 text-background text-2xl font-semibold md:max-w-lg 2xl:max-w-3xl">
+      <p className="absolute left-6 bottom-16 sm:bottom-16 max-w-xl sm:left-16 text-background sm:text-2xl font-semibold md:max-w-lg 2xl:max-w-3xl">
         {props.description}
       </p>
     </div>
