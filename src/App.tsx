@@ -14,7 +14,7 @@ function App() {
       <Navbar />
       <header>
         <div className="container mx-auto flex justify-center">
-          <h1 className="ml-6 text-4xl sm:text-5xl mt-12 mb-8 sm:ml-0 text-primary font-bold">
+          <h1 className="ml-6 text-4xl sm:text-5xl mt-12  sm:mb-8 sm:ml-0 text-primary font-bold">
             Stay on top of all the world cup news!
           </h1>
         </div>

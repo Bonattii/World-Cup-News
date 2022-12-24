@@ -8,12 +8,12 @@ interface ImportantNewsProps {
 
 export default function importantNews(props: ImportantNewsProps) {
   return (
-    <div className="relative mx-auto mt-0 hover:scale-95 duration-2000 py-8 min-w-20 max-w-6xl h-32 lg:h-32 2xl:h-44 w-full hover:opacity-[0.90] hover:brightness-50 2xl:max-w-[100rem]">
+    <div className="relative mx-auto mt-0 hover:scale-95 duration-2000 py-8 min-w-20 max-w-6xl h-32 lg:h-32 2xl:h-44 w-full 2xl:max-w-[100rem]">
       <a href={props.newsLink} target="_blank" rel="noreferrer">
         <img
           src={props.bannerUrl}
           alt={props.altDesc}
-          className="rounded-xl mb-10 shadow-[10px_10px_5px] shadow-primary w-full h-full hover:shadow-accent object-cover object-right-center "
+          className="rounded-xl mb-10 shadow-[10px_10px_5px] brightness-50 shadow-primary w-full h-full hover:shadow-accent object-cover object-right-center "
         />
       </a>
 
