@@ -9,7 +9,7 @@ function App() {
   return (
     <div
       className="bg-background h-full
-    min-w-[61.25]"
+    sm:min-w-[61.25]"
     >
       <Navbar />
       <header>

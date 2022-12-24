@@ -34,7 +34,7 @@ export default function JoinNewsletter() {
         )
         .catch(err => console.log('FAILED!', err));
       setFormSubmitted(true);
-      // setToSend({ ...toSend, firstName: '', lastName: '', email: '' });
+      setToSend({ ...toSend, firstName: '', lastName: '', email: '' });
     } catch (err) {
       console.log(err);
     }
@@ -107,9 +107,7 @@ export default function JoinNewsletter() {
           }}
           disabled={formSubmitted ? true : false}
         >
-          {formSubmitted
-            ? `Thanks for joining us ${toSend.firstName} ${toSend.lastName}!`
-            : 'Join Now!'}
+          {formSubmitted ? 'Thanks for joining us!' : 'Join Now!'}
         </button>
       </footer>
     </form>
