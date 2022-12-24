@@ -23,12 +23,12 @@ function App() {
       <main className="overflow-hidden">
         <div id="divider"></div>
 
-        <article className="bg-primary pt-16 px-2 mx-auto pb-20 flex gap-36 sm:px-4 justify-center text-background">
-          <h2 className="text-4xl self-center max-w-sm font-bold">
+        <article className="bg-primary sm:pt-16 mx-auto sm:pb-20 flex flex-col sm:flex-row gap-4 sm:gap-36 sm:px-4 justify-center text-background">
+          <h2 className="mt-14 px-4 sm:px-0 sm:mt-0 text-2xl sm:text-4xl self-center max-w-sm font-bold mb-4 sm:mb-0">
             Don't lose any news about the World Cup! And enjoy the most of you
             can of this beautiful event!
           </h2>
-          <ul className="flex flex-col gap-4 self-center">
+          <ul className="flex flex-col gap-4 self-center px-4 sm:px-0">
             <ListItems content="Receive the most up to date news" />
             <ListItems content="Get the results of the matches" />
             <ListItems content="Facts about the next games" />
@@ -39,7 +39,7 @@ function App() {
         <div id="divider-reverse"></div>
 
         <article className="bg-background pt-0 px-2 mx-auto pb-0 sm:px-4 text-background">
-          <h3 className="text-primary text-center text-4xl font-semibold">
+          <h3 className=" mt-6 sm:mt-0 text-primary text-center text-4xl font-semibold">
             About the Newsletter
           </h3>
           <div
@@ -64,15 +64,15 @@ function App() {
           className="bg-primary pt-0 px-2 mx-auto pb-20 sm:px-4 text-background"
         >
           <div id="divider2"></div>
-          <h2 className="text-center font-bold text-4xl">
+          <h2 className="text-center font-bold text-4xl mt-6 sm:mt-0">
             Join the newsletter now for free!
           </h2>
-          <div className="flex justify-center mt-14">
+          <div className="flex justify-center sm:mt-14">
             <JoinNewsletter />
           </div>
         </article>
 
-        <footer className="bg-primary pt-0 px-2 mx-auto sm:px-4 text-background text-center pb-10">
+        <footer className="bg-primary px-2 mx-auto sm:px-4 text-background text-center pb-10">
           <p>World Cup News &#169; 2022, All Rights Reserved</p>
         </footer>
       </main>

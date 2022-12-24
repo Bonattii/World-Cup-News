@@ -43,9 +43,9 @@ export default function JoinNewsletter() {
   return (
     <form
       onSubmit={handleSubmit}
-      className="mt-8 flex flex-col gap-4 w-[600px]"
+      className="mt-8 flex flex-col gap-2 w-[300px] sm:w-[600px]"
     >
-      <div className="flex gap-6 w-full">
+      <div className="sm:flex sm:gap-4 sm:w-full">
         <div className="flex flex-col gap-2 w-full">
           <label className="text-lg font-semibold pl-1" htmlFor="firstName">
             First Name
@@ -62,7 +62,7 @@ export default function JoinNewsletter() {
             title="Name should contain 3-16 characters[a-z]"
           />
         </div>
-        <div className="flex flex-col gap-2 w-full">
+        <div className="mt-4 sm:mt-0 flex flex-col gap-2 w-full">
           <label className="text-lg font-semibold pl-1" htmlFor="lastName">
             Last Name
           </label>
