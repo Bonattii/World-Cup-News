@@ -13,7 +13,7 @@ export default function importantNews(props: ImportantNewsProps) {
         <img
           src={props.bannerUrl}
           alt={props.altDesc}
-          className="rounded-xl mb-10 shadow-[10px_10px_5px] brightness-50 shadow-primary w-full h-full hover:shadow-accent object-cover object-right-center "
+          className="rounded-xl mb-10 shadow-[10px_10px_5px] brightness-50 shadow-primary w-full h-full hover:shadow-accent object-cover object-right-center sm:object-fill"
         />
       </a>
 
