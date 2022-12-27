@@ -57,3 +57,5 @@ Hakimi https://www.mirror.co.uk/sport/football/news/hakimi-infantino-fifa-morocc
 
 icon - Handicon
 icon flag - Freepik
+
+https://world-cup-news.vercel.app/
