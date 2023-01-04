@@ -1,61 +1,41 @@
-# Getting Started with Create React App
+# World Cup News
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project consists is a Mid Term Project for the WMAD Course at Ciccc.
 
-## Available Scripts
+It was asked to develop a hole website using HTML and CSS technologies, but I've decided to use React with Tailwindcss to develop the hole website.
 
-In the project directory, you can run:
+## What the website is all about
 
-### `npm start`
+The website consists in a landing page for a Soccer World Cup news, where people can have a bit of information about the service and at the same time can join the newsletter by filling a very basic form that asks for name and email.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Technologies and Libraries Utilized
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- React with TypeScript
+- TailwindCSS for the stylish of the pages
+- Swiper library to the swiper news on the page
+- EmailJs API that is responsible to send a email confirmation directly to the email put on the form
 
-### `npm test`
+## Deployement
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+The application was deployed using Vercel and can be found at this link: [World Cup News](https://world-cup-news.vercel.app/)
 
-### `npm run build`
+### Credits for the images and icons
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Messi Photo and News - https://www.marca.com/en/world-cup/2022/03/26/623e73d046163f4b128b4594.html
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Neymar News - https://www.espn.com/soccer/fifa-world-cup/story/4831335/ronaldo-says-neymar-should-have-psychological-support-after-world-cup-pressure-cooker
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Neymar Photo - AP Photo/Darko Bandic
 
-### `npm run eject`
+Mbappe Photo and News - https://www.aljazeera.com/sports/2022/12/18/france-fans-hail-mbappes-dazzling-world-cup-final-performance
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Modric News - https://www.mirror.co.uk/sport/football/match-reports/luka-modric-world-cup-croatia-28757741
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Modric Photo - https://www.marca.com/en/world-cup/2022/12/06/638f5bd046163f622c8b45d1.html
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Hakimi News - https://www.mirror.co.uk/sport/football/news/hakimi-infantino-fifa-morocco-croatia-28759754
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Hakimit Photo - Ercin Erturk/Anadolu Agency via Getty Images
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-Messi https://www.marca.com/en/world-cup/2022/03/26/623e73d046163f4b128b4594.html
-
-Neymar https://www.espn.com/soccer/fifa-world-cup/story/4831335/ronaldo-says-neymar-should-have-psychological-support-after-world-cup-pressure-cooker AP Photo/Darko Bandic
-
-Mbappe https://www.aljazeera.com/sports/2022/12/18/france-fans-hail-mbappes-dazzling-world-cup-final-performance [Credit: Getty
-
-Modric https://www.mirror.co.uk/sport/football/match-reports/luka-modric-world-cup-croatia-28757741 https://www.marca.com/en/world-cup/2022/12/06/638f5bd046163f622c8b45d1.html
-
-Hakimi https://www.mirror.co.uk/sport/football/news/hakimi-infantino-fifa-morocco-croatia-28759754 Ercin Erturk/Anadolu Agency via Getty Images)
-
-icon - Handicon
+Icon 1 - Handicon
 icon flag - Freepik
-
-https://world-cup-news.vercel.app/
